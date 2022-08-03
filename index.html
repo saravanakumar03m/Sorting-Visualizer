@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="./style.css">
+<body>
+    <div class="top-bar">
+        <div id="rangeinput" >
+            <button id="new-array" onclick="genArray()">New Array</button>
+            <label for="input-size">Aray Size</label>
+            <input name="input-size" type="range" min="1" max="200" class="slider" id="myRange" value="50">
+            <output id="size-disp"></output>
+            <label for="input-speed">Sorting Speed</label>
+            <input name="input-speed" type="range" min="1" max="200" class="slider" id="speedRange" value="100">
+            <output id="speed-disp"></output>
+        </div>
+        
+        <div class="dropdown">
+            <h3>ALGORITHMS</h3>
+            <div class="dropdown-content" >
+                <button id="selection-sort" onclick="selectionSort()">Selection Sort</button>
+                <button id="bubble-sort" onclick="bubbleSort()">Bubble Sort</button>
+                <button id="merge-sort" onclick="mergeSort()">Merge Sort</button>
+                <button id="insertion-sort" onclick="insertionSort()">Insertion Sort</button>
+                <button id="quick-sort" onclick="quickSort()">Quick Sort</button>
+            </div>
+        </div>
+    </div>
+    <div id="flex-container">
+        <div id="contentArea">
+            <div id=colorstrip></div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="./selectionSort.js"></script>
+    <script src="./bubbleSort.js"></script>
+    <script src="./mergeSort.js"></script>
+    <script src="./insertionSort.js"></script>
+    <script src="./quickSort.js"></script>
+</body>
+
+</html>
